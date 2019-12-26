@@ -1,0 +1,47 @@
+//COLORS
+$primary-pink : #fbdff0;
+$secondary-pink: #f6c3e5;
+$primary-purple: #a278b5;
+$secondary-purple: #381460;
+
+//FONTS
+$font-family: 'Dosis', sans-serif;
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;  // 10px/16px = 62.5% -> 10px
+}
+
+body {
+    background-color: $primary-purple;
+    font-family: $font-primary;
+    color: $secondary-purple;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+
+ul {text-decoration: none;}
+li {text-decoration: none;}
+button {border: none;}
+
+.center {
+    margin: 0 auto;
+}
+
+.margintopbig {
+    margin-top: 8rem;
+}
+.margintopsm {
+    margin-top: 2rem;
+}
+
+
