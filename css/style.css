@@ -82,6 +82,9 @@ button {
   .card:hover {
     box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.5); }
 
-.removeOpacity {
+.removeCover {
   opacity: 0;
+  pointer-events: none; }
+
+.lock {
   pointer-events: none; }

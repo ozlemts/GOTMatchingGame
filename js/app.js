@@ -4,7 +4,7 @@ let shuffled = [];
 let chosen = [0,0];
 let move = 0;
 let el = [];
-
+let allCard = document.querySelector(".card_backs");
 
 //shuffle the cards
 shuffled = shuffle(cardOrder);
@@ -16,7 +16,7 @@ document.querySelectorAll(".card_front").forEach(e => {e.src = "img/" + shuffled
 document.querySelector(".card_backs").addEventListener('click', (e)=> {
     if(e.target.nodeName =='IMG'){
         el[move] = e.target;
-        el[move].classList.toggle('removeOpacity');
+        el[move].classList.toggle('removeCover');
         chosen[move] = e.target.getAttribute('data_key');
         move = move + 1;
         if (move > 1 ) {
@@ -24,8 +24,10 @@ document.querySelector(".card_backs").addEventListener('click', (e)=> {
             if (shuffled[chosen[0]] == shuffled[chosen[1]]){
             console.log("They are same");
             } else {
-                setTimeout (()=>{ el[0].classList.toggle('removeOpacity');
-                                  el[1].classList.toggle('removeOpacity');}, 500);
+                allCard.classList.toggle('lock');
+                setTimeout (()=>{ el[0].classList.toggle('removeCover');
+                                  el[1].classList.toggle('removeCover');
+                                  allCard.classList.toggle('lock');}, 500);
             } 
         }
     }

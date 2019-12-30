@@ -40,7 +40,11 @@
 
 }
 
-.removeOpacity {
+.removeCover {
     opacity: 0;
+    pointer-events: none;
+}
+
+.lock {
     pointer-events: none;
 }
