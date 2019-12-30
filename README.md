@@ -1,3 +1,6 @@
-![readmeIMG](https://user-images.githubusercontent.com/12174223/71476798-f8a21a80-27f7-11ea-8460-75f3a52cdaa0.png)
+# GOT CARD MATCHING GAME
+This is the js exercise project for JS Study Group 
 
-#images from  David M. Buisán
+![readmeIMG](https://user-images.githubusercontent.com/12174223/71591041-d3851300-2b3b-11ea-9ecd-ba5fd00e92f8.png)
+
+* Images from  David M. Buisán
