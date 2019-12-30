@@ -4,13 +4,12 @@ let shuffled = [];
 let chosen = [0,0];
 let move = 0;
 let el = [];
+let score = 0;
 let allCard = document.querySelector(".card_backs");
 
 //shuffle the cards
 shuffled = shuffle(cardOrder);
 document.querySelectorAll(".card_front").forEach(e => {e.src = "img/" + shuffled[e.getAttribute('data_key')] + ".png"}); 
-
-
 
 //open the clicked card, take the number
 document.querySelector(".card_backs").addEventListener('click', (e)=> {
@@ -23,6 +22,8 @@ document.querySelector(".card_backs").addEventListener('click', (e)=> {
             move = 0;
             if (shuffled[chosen[0]] == shuffled[chosen[1]]){
             console.log("They are same");
+            score = score + 1;
+            document.querySelector(".score").innerText = 'Score: ' + score;
             } else {
                 allCard.classList.toggle('lock');
                 setTimeout (()=>{ el[0].classList.toggle('removeCover');
