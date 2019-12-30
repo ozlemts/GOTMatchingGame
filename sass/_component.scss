@@ -3,12 +3,31 @@
     text-align: center;
 }
 
-.cards {
+.container {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform: translateX(-40rem);
+
+}
+
+.card_fronts {
+    position: absolute;
     width: 80rem;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
+}
+.card_backs {
+    position: absolute;
+    width: 80rem;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    opacity: 1;
 }
 
 .card {
@@ -19,4 +38,10 @@
     &:hover {
         box-shadow: 0 10px 16px 0 rgba(0,0,0,0.5);
     }
+
+}
+
+.removeOpacity {
+    opacity: 0;
+    pointer-events: none;
 }
